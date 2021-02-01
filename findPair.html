@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function findPair(arr,key){
+    console.log("calling")
+    console.log(arr)
+    console.log(key)
+    var c
+    var b=[]
+    for(var i=0;i<arr.length;i++){
+        c=i+1;
+        if(arr[i]+arr[c]==key){
+            console.log("pair is found")
+            console.log(arr[i])
+            console.log(arr[c])
+            b.push(arr[i])
+            b.push(arr[c])
+            return b
+        }
+    }
+}
+var arr=[3,9,2,5,6,7]
+var key=11
+var res=findPair(arr,key)
+console.log(res)
+    </script>
+</body>
+</html>
