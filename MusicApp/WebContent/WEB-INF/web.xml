@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>MusicApp</display-name>
+  <welcome-file-list>
+    <welcome-file>welcome.html</welcome-file>
+    </welcome-file-list>
+   <servlet>
+   <servlet-name>homepages</servlet-name>
+   <servlet-class>com.xworkz.musicapp.HomePage</servlet-class>
+   </servlet>
+   <servlet-mapping>
+   <servlet-name>homepages</servlet-name>
+   <url-pattern>/homepage</url-pattern>
+   </servlet-mapping>
+   <servlet>
+   <servlet-name>registerpages</servlet-name>
+   <servlet-class>com.xworkz.musicapp.Registration</servlet-class>
+   </servlet>
+   <servlet-mapping>
+   <servlet-name>registerpages</servlet-name>
+   <url-pattern>/register</url-pattern>
+   </servlet-mapping>
+   <servlet>
+   <servlet-name>loginpages</servlet-name>
+   <servlet-class>com.xworkz.musicapp.LoginServlet</servlet-class>
+   </servlet>
+   <servlet-mapping>
+   <servlet-name>loginpages</servlet-name>
+   <url-pattern>/login</url-pattern>
+   </servlet-mapping>
+   <servlet>
+   <servlet-name>previews</servlet-name>
+   <servlet-class>com.xworkz.musicapp.PreviewServlet</servlet-class>
+   </servlet>
+   <servlet-mapping>
+   <servlet-name>previews</servlet-name>
+   <url-pattern>/preview</url-pattern>
+   </servlet-mapping>
+   <servlet>
+   <servlet-name>verifyingPage</servlet-name>
+   <servlet-class>com.xworkz.musicapp.VerifyServlet</servlet-class>
+   </servlet>
+   <servlet-mapping>
+   <servlet-name>verifyingPage</servlet-name>
+   <url-pattern>/verified</url-pattern>
+   </servlet-mapping>
+  
+</web-app>
